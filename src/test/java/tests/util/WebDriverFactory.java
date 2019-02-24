@@ -7,15 +7,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import static com.uscold.ui.utils.TestLogger.LOGGER;
 
-
-/**
- * ***********************************************************************************************************************
- * Uscold.MDM
- * User: fwrmoral
- * 2/24/19
- * ***********************************************************************************************************************
- **/
-
 public class WebDriverFactory {
 
     /*public static synchronized WebDriver getDriver() {

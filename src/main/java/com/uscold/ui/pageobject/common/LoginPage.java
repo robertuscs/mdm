@@ -1,13 +1,5 @@
 package com.uscold.ui.pageobject.common;
 
-/**
- * ***********************************************************************************************************************
- * Uscold.MDM
- * User: fwrmoral
- * 2/24/19
- * ***********************************************************************************************************************
- **/
-
 import com.uscold.ui.pageobject.PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,14 +35,4 @@ public class LoginPage extends PageObject {
     public LoginPage(WebDriver driver) {
         super(driver);
     }
-
-//    public boolean isInitialized() {
-//        return loginButton.isDisplayed();
-//    }
-
-
-//    public LoginPage submit(){
-//        loginButton.click();
-//        return new LoginPage(driver);
-//    }
 }

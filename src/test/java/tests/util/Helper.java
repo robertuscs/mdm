@@ -22,14 +22,6 @@ import java.util.List;
 import static com.uscold.ui.utils.TimeoutConstants.GET_ELEMENT_TIMEOUT;
 import static com.uscold.ui.utils.TimeoutConstants.SHORT_TIMEOUT_MS;
 
-/**
- * ***********************************************************************************************************************
- * Uscold.MDM
- * User: fwrmoral
- * 2/24/19
- * ***********************************************************************************************************************
- **/
-
 public class Helper {
 
     private static final org.apache.log4j.Logger LOGGER = org.apache.log4j.Logger.getLogger(BaseTest.class);
