@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Dry run end to end" configfailurepolicy="continue" parallel="tests" thread-count="1">
-    <test name="Pilgrims">
-        <classes>
-            <class name="com.uscold.ui.endtoend.NewProductCodeReceivingAndShipping"/>
-        </classes>
-    </test>
-</suite>
