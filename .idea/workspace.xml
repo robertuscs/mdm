@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/../backups/USCS-BE" afterPath="$PROJECT_DIR$/../backups/USCS-BE" />
       <change beforePath="$PROJECT_DIR$/../backups/mdm/uscsmdmworkspace" afterPath="$PROJECT_DIR$/../backups/mdm/uscsmdmworkspace" />
       <change beforePath="$PROJECT_DIR$/../backups/uscsmdmworkspace" afterPath="$PROJECT_DIR$/../backups/uscsmdmworkspace" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -785,7 +786,7 @@
       <option name="presentableId" value="Default" />
       <updated>1550881676105</updated>
       <workItem from="1550881681629" duration="4140000" />
-      <workItem from="1550983437044" duration="33612000" />
+      <workItem from="1550983437044" duration="34232000" />
     </task>
     <task id="LOCAL-00001" summary="Formatted issues">
       <created>1551046571148</created>
@@ -858,7 +859,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37752000" />
+    <option name="totallyTimeSpent" value="38372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
