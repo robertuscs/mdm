@@ -1,0 +1,127 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UI Test Suite" configfailurepolicy="continue" parallel="tests" thread-count="1">
+    <listeners>
+        <listener class-name="com.uscold.ui.conf.ScreenShootsListener"/>
+        <listener class-name="com.uscold.core.CustomListener"/>
+        <listener class-name="com.uscold.core.reporting.CustomTestNGReporter"/>
+    </listeners>
+    <test name="Cycle Count">
+        <classes>
+            <class name="com.uscold.ui.selenidetests.rftests.cyclecount.CheckCpidValidationDuringCycleCount"/>
+        </classes>
+    </test>
+    <test name="RF terminal">
+        <classes>
+            <class name="com.uscold.ui.test.rf.RelocateRF"/>
+            <class name="com.uscold.ui.test.rf.TakeWeightsRF"/>
+            <class name="com.uscold.ui.test.rf.CycleCountRF"/>
+            <class name="com.uscold.ui.test.inventory.CheckCycleCountInquiryTest"/>
+        </classes>
+    </test>
+    <test name="Create and confirm receipt">
+        <classes>
+            <!--<class name="com.uscold.ui.test.receipt.ReceivingTestRF"/> moved to new test suite-->
+            <!--<class name="com.uscold.ui.test.receipt.CreateNewReceiptTest"/> moved to new test suite-->
+            <class name="com.uscold.ui.test.receipt.CreateNewAppointment"/>
+            <!--<class name="com.uscold.ui.test.ViewAllReceipts"/> moved to new test suite-->
+            <!--<class name="com.uscold.ui.test.receipt.ConfirmLotTest"/> moved to new test suite -->
+            <!--<class name="com.uscold.ui.test.receipt.ConfirmReceiptTest"/> moved to new test suite-->
+        </classes>
+    </test>
+    <!--Commented because of known issue-->
+    <!--<test name="Create barcode">-->
+    <!--<classes>-->
+    <!--<class name="com.uscold.ui.test.barcode.AssignAndViewBarcodeTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <test name="Customer maintenance">
+        <classes>
+            <!--Disabled because of the bug PFD-2867-->
+            <!--<class name="com.uscold.ui.test.customers.ViewExistingCustomersPageTest"/>-->
+            <class name="com.uscold.ui.test.customers.CreateNewCustomerTest"/>
+            <class name="com.uscold.ui.test.customers.ViewAllCustomersTest"/>
+        </classes>
+    </test>
+    <test name="Product maintenance">
+        <classes>
+            <class name="com.uscold.ui.test.product.CreateAndViewCreatedProductTest"/>
+            <class name="com.uscold.ui.test.product.UpdateAndViewCreatedProductTest"/>
+            <class name="com.uscold.ui.test.product.SearchProductByProductCode"/>
+            <class name="com.uscold.ui.test.product.ViewAllProductsCustomerLevel"/>
+            <class name="com.uscold.ui.test.product.ViewAllProductsWarehouseLevel"/>
+        </classes>
+    </test>
+    <test name="Create location flow">
+        <classes>
+            <class name="com.uscold.ui.test.location.CreateRoomAisleAndRack"/>
+            <class name="com.uscold.ui.test.location.LocationCRUDTest"/>
+        </classes>
+    </test>
+    <test name="Ordering flow">
+        <classes>
+            <class name="com.uscold.ui.test.orders.CreateNewOutboundAppointment"/>
+            <class name="com.uscold.ui.test.orders.PickTestRF"/>
+            <class name="com.uscold.ui.test.orders.CheckTaskStatusAfterPickingTest"/>
+            <class name="com.uscold.ui.test.orders.CheckInventoryAfterPickingTest"/>
+            <class name="com.uscold.ui.test.orders.CheckingAndLoadingRF"/>
+            <class name="com.uscold.ui.test.orders.CheckOrderTasksStatusesTest"/>
+            <!--Ignored because of the non-valid test data on AQTSTT. Move to AQTSTST is needed.-->
+            <!--<class name="com.uscold.ui.test.orders.ConfirmOrderTest"/>-->
+            <class name="com.uscold.ui.test.orders.CreateNewOrderTest"/>
+            <class name="com.uscold.ui.test.orders.CreateRealTaskTest"/>
+        </classes>
+    </test>
+    <test name="Order maintenance">
+        <classes>
+            <class name="com.uscold.ui.test.orders.ShipOrderInquiryTest"/>
+            <class name="com.uscold.ui.test.orders.OrdersSearchTest"/>
+            <class name="com.uscold.ui.test.orders.OrdersGridFilteringTest"/>
+        </classes>
+    </test>
+    <test name="Inventory search by some criteria">
+        <classes>
+            <class name="com.uscold.ui.test.inventory.InventoryMaintenanceHoldReleaseTest"/>
+            <class name="com.uscold.ui.test.inventory.InventoryNotesTest"/>
+            <class name="com.uscold.ui.test.inventory.InventorySearchTest"/>
+            <class name="com.uscold.ui.test.inventory.InventoryGridTest"/>
+        </classes>
+    </test>
+    <test name="Profile assignment test">
+        <classes>
+            <!--<class name="com.uscold.ui.test.profileAssignment.AssignUnassignProfileTests"/> moved to new test suite-->
+        </classes>
+    </test>
+    <test name="Appointments">
+        <classes>
+            <!--<class name="com.uscold.ui.test.appointments.AppointmentMaintBasicSearch"/> moved to new test suite-->
+            <!--<class name="com.uscold.ui.test.appointments.AppointmentsMaintAdditionalSearch"/> moved to new test suite-->
+        </classes>
+    </test>
+    <test name="Taskmaster test">
+        <classes>
+            <class name="com.uscold.ui.test.taskmaster.TaskMasterBasicSearchTest"/>
+        </classes>
+    </test>
+    <test name="Consignee maintenance">
+        <classes>
+            <class name="com.uscold.ui.test.consignee.CreateConsigneeTest"/>
+        </classes>
+    </test>
+    <test name="User maintenance">
+        <classes>
+            <class name="com.uscold.ui.test.user.CreateUserTest"/>
+        </classes>
+    </test>
+    <test name="Zone Map">
+        <classes>
+            <class name="com.uscold.ui.test.location.UpdateZoneTest"/>
+            <class name="com.uscold.ui.test.location.ZoneMapSearchTest"/>
+        </classes>
+    </test>
+    <test name="Inventory Maintenance Summary">
+        <classes>
+            <!--<class name="com.uscold.ui.selenidetests.inventory.InventorySummaryTest"/>-->
+        </classes>
+    </test>
+</suite>
+
