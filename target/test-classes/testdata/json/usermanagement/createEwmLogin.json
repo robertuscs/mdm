@@ -1,0 +1,10 @@
+{
+  "userName": "Selenide",
+  "userSurname": "User",
+  "securityLevel": "10",
+  "primaryWarehouse": "160 - MILFORD",
+  "dock": "1",
+  "role": "IT Support",
+  "successMassage": "User Selenide User - suser is successfully created !"
+}
+

@@ -1,0 +1,29 @@
+{
+  "driver": {
+    "number": "1336876761",
+    "firstName": "ALICE",
+    "lastName": "COOPER",
+    "id": "20181213174701",
+    "contact": "(817) 333-2211",
+    "birthDate": "",
+    "carrier": "AUDI-100009",
+    "issues": "N",
+    "frequency": "0",
+    "comments": ""
+  },
+  "newDriverData": {
+    "number": "1336876761",
+    "firstName": "ALISON",
+    "lastName": "COPPER",
+    "id": "20181213174701",
+    "contact": "(816) 123-4555",
+    "birthDate": "",
+    "carrier": "DARK HORSE EXPRESS-1111",
+    "issues": "N",
+    "frequency": "0",
+    "comments": ""
+  },
+  "appointmentNumber": "100196",
+  "trailerNumber": "001",
+  "appointmentCarrier": "100009-AUDI"
+}
