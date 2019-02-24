@@ -32,7 +32,6 @@ public class Helper {
     public WebDriver driver;
 
     public static Object[][] getLabelMappingData(String testDataSheetPath, String sheetName) {
-
         FileInputStream file = null;
         try {
 
